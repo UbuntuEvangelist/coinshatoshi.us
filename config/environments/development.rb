@@ -1,4 +1,5 @@
 
+
 # encoding: UTF-8
 # frozen_string_literal: true
 
@@ -14,7 +15,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-#  config.cache_store = :redis_store, 'redis://localhost:6379/0'
+  config.cache_store = :redis_store, 'redis://localhost:6379/0'
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
@@ -46,7 +47,7 @@ Rails.application.configure do
     Bullet.enable = true if ENV['BULLET'] == 'true'
     Bullet.bullet_logger = true
     Bullet.add_footer = true
-    ENV["REDIS"] = "localhost:6379"
+#    ENV["REDIS"] = "localhost:6379"
 
   end
 end

@@ -16,6 +16,11 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     when 'google'
       require 'omniauth-google-oauth2'
       provider :google_oauth2, ENV.fetch('GOOGLE_CLIENT_ID'), ENV.fetch('GOOGLE_CLIENT_SECRET')
+# config/initializers/omniauth.rb
+OmniAuth.config.full_host = Rails.env.production? ? 'https://coinshatoshi.us' : 'http://localhost:3000'
+
+
+# provider :google_oauth2, ENV.fetch('727197910296-s3ne10l2un91u61ur6oumssu87vaj675.apps.googleusercontent.com'), ENV.fetch('fWzyQWv2YZwhiwf_qgQnOnUY')
 
     when 'barong'
       require 'omniauth-barong'

@@ -16,6 +16,9 @@ gem 'redis-rails', '~> 5.0.2'
 gem 'redis', '3.2.0'
 gem 'rubocop-performance'
 
+# gem 'devise', '~> 4.3.0'
+# gem 'omniauth-google-oauth2', '~> 0.2.2'
+
 gem 'jbuilder', '~> 2.7.0'
 gem 'oauth2', github: 'oauth-xx/oauth2'
 gem 'omniauth', '~> 1.8.1'
